@@ -6,7 +6,35 @@
     <title>To-do App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="display-f">
+    <!-- navbar -->
+    <nav class="navbar text-white mb-3">
+        <h1>To-Do App</h1>
+        <p>A Simple App to keep track of your tasks</p>
+    </nav>
+
+    <!-- To-Do Container -->
+    <div class="todo-container br-sm p-2">
+        <div class="title">
+            <h2>
+                To-Do List
+            </h2>
+            <img src="img/icon.png" alt="todo icon" class="todo-icon">
+        </div>
+        <div class="input-div">
+            <input type="text" placeholder="Add your task" class="task-input p-1 pl-2 br-lg bg-primary-light-9">
+            <button class="btn-primary text-white submit-btn">Add</button>
+        </div>
+        <div class="todo-list">
+            <div class="todo-item">
+                <div class="checkmark"></div>
+                <p>Run a Mile</p>
+            </div>
+            <div class="todo-item">
+                <div class="checkmark"></div>
+                <p>Run a Mile</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
