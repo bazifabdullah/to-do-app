@@ -21,20 +21,18 @@
             </h2>
             <img src="img/icon.png" alt="todo icon" class="todo-icon">
         </div>
-        <div class="input-div">
-            <input type="text" placeholder="Add your task" class="task-input p-1 pl-2 br-lg bg-primary-light-9">
-            <button class="btn-primary text-white submit-btn">Add</button>
-        </div>
-        <div class="todo-list">
-            <div class="todo-item">
-                <div class="checkmark"></div>
-                <p>Run a Mile</p>
-            </div>
-            <div class="todo-item">
-                <div class="checkmark"></div>
-                <p>Run a Mile</p>
-            </div>
+        <form class="input-div" id="input-form">
+            <input type="text" placeholder="Type your task" class="task-input p-1 pl-2 br-lg bg-primary-light-9">
+            <button type="submit" class="btn-primary text-white submit-btn">Add</button>
+        </form>
+        <div class="todo-list" id="todo-list">
+            <!-- <div class="todo-item">
+                <div class="checkmark checked"></div>
+                <p class="todo-task task-completed">Run a Mile</p>
+                <img src="img/del icon.png" alt="delete icon" class="del-icon">
+            </div> -->
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
