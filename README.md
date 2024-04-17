@@ -8,4 +8,4 @@ HTML | CSS | JavaScript | SASS
 
 ## Live Preview
 
-<a href="https://bazifabdullah.github.io/to-do-app/">Click to View</a>
+<a href="https://bazifabdullah.github.io/to-do-app/" target="_blank">Click to View</a>
