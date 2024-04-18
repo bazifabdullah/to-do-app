@@ -28,6 +28,7 @@ function addTask(e) {
         todoList.appendChild(todoItem);
 
         inputField.value = '';
+        saveData()
     }
 }
 
@@ -38,6 +39,7 @@ todoList.addEventListener('click', (e) => {
        const todoItem = e.target.closest('.todo-item');
        if (todoItem) {
            todoList.removeChild(todoItem);
+           saveData()
        }
    } else if (e.target.closest('.todo-item')) {
        const checkmark = e.target.closest('.todo-item').querySelector('.checkmark');
@@ -45,5 +47,15 @@ todoList.addEventListener('click', (e) => {
 
        checkmark.classList.toggle('checked');
        todoTask.classList.toggle('task-completed');
+       saveData()
    }
 });
+
+function saveData() {
+    localStorage.setItem("data", todoList.innerHTML);
+}
+
+function showTask() {
+    todoList.innerHTML = localStorage.getItem('data');
+}
+showTask();
