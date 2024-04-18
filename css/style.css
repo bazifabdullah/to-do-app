@@ -54,8 +54,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
-.checkmark:hover {
+.checkmark .checkmark:hover {
   border: 1px solid #979797;
 }
 
@@ -83,8 +82,7 @@ body {
   right: 5%;
   cursor: pointer;
 }
-
-.del-icon:hover {
+.del-icon .del-icon:hover {
   background-color: #eee;
   border-radius: 50%;
   padding: 4px;

@@ -33,7 +33,7 @@ body {
 
 .task-input {
     border: none;
-    width: 94%;
+    width: 94%;    
 }
 
 .task-input:focus {
@@ -53,11 +53,12 @@ body {
     border: 1px solid #dfdfdf;
     border-radius: 50%;
     cursor: pointer;
+
+    .checkmark:hover {
+        border: 1px solid #979797;
+    }
 }
 
-.checkmark:hover {
-    border: 1px solid #979797;
-}
 
 .checked {
     border: none;
@@ -82,12 +83,13 @@ body {
     position: absolute;
     right: 5%;
     cursor: pointer;
+
+    .del-icon:hover {
+        background-color: #eee;
+        border-radius: 50%;
+        padding: 4px;
+    }
 }
 
-.del-icon:hover {
-    background-color: #eee;
-    border-radius: 50%;
-    padding: 4px;
-}
 
 @import 'shinobi'
